@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10</title>
+</head>
+<body>
+    <h1>Assignment 10</h1>
+
+    <h2>Enter the number of candidates:</h2>
+    <input type="number" id="numCandidates" placeholder="Number of candidates">
+    <button onclick="startVoting()">Start Voting</button>
+
+    <div id="candidateInput" style="display:none;">
+        <h2>Enter the names of the candidates:</h2>
+        <div id="candidateNameInputs"></div>
+        <button onclick="startVotingProcess()">Start Voting Process</button>
+    </div>
+
+    <div id="votingProcess" style="display:none;">
+        <h2>Enter the number of voters:</h2>
+        <input type="number" id="numVoters" placeholder="Number of voters">
+        <button onclick="collectVotes()">Start Collecting Votes</button>
+    </div>
+
+    <div id="results" style="display:none;">
+        <h2>Results:</h2>
+        <pre id="resultText"></pre>
+    </div>
+
+    <script src="t10.js"></script>
+</body>
+</html>
