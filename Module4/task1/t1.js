@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const queryInput = document.getElementById("query");
 
     form.addEventListener("submit", async (event) => {
-        event.preventDefault(); // Prevent the default form submission
+        event.preventDefault();
 
         const query = queryInput.value.trim();
         if (!query) {
